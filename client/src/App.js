@@ -13,30 +13,7 @@ function App() {
     setSlide(newSlide);
 
     if (newSlide === 1) {
-      setBgColor('#354348');const [backendData, setBackendData] = useState([{}]);
-
-      useEffect(() => {
-        fetch("/api").then(
-          response => response.json()
-        ).then(
-          data => {
-            const [backendData, setBackendData] = useState([{}]);
-          
-            useEffect(() => {
-              fetch("/api").then(
-                response => response.json()
-              ).then(
-                data => {
-                  setBackendData(data)
-                  console.log(data)
-                }
-              )
-            }, []);
-            setBackendData(data)
-            console.log(data)
-          }
-        )
-      }, []);
+      setBgColor('#354348');
     } else if (newSlide === 2) {
       setBgColor('#677289');
     } else if (newSlide === 3) {
@@ -45,17 +22,6 @@ function App() {
       setBgColor('#8b9599');
     }
   };
-  /*
-    if (newSlide === 1) {
-      setBgColor('#007ea7');
-    } else if (newSlide === 2) {
-      setBgColor('#00c9a7');
-    } else if (newSlide === 3) {
-      setBgColor('#ff3e41');
-    } else if (newSlide === 4) {
-      setBgColor('#ffeb7f');
-    }
-  */
 
   return (
     <div className="App" style={{ backgroundColor: bgColor }}> {/* MAIN DIV --------------------------------------------------------------------------------*/}
