@@ -1,0 +1,23 @@
+/* Loading.css */
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    color: #212121;
+}
+
+.loading-content {
+  text-align: center;
+}
+
+.loading-content img {
+  width: 100px; /* Adjust the width as needed */
+}
+
+.loading-content p {
+  font-size: 24px;
+  margin-top: 10px;
+}

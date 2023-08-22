@@ -1,6 +1,6 @@
 # BookyCare React APP:
 
-This startup's website is created using REACT (for the moment only FrontEnd, adding Node BackEnd later on)
+This startup's website is created using REACT (for the moment only Front-End, adding Node Back-End later on)
 
 ## Main features:
 
