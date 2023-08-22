@@ -50,8 +50,20 @@ function App() {
       
       <main>
         <div className="left-content">
-          Scegli il <span>professionista</span> più <span>adatto a te</span>
+          <h1>PRENOTA ORA</h1>
+          <h3>Scegli il professionista che fa al caso tuo</h3>
+          <form className="search-form" action="your-submit-url" method="POST">
+            <div className="input-container">
+              <input name="luogo" type="text" placeholder="Padova, PD" required autoFocus />
+              <hr id="hr-vertical" />
+              <input name="specialista" type="text" placeholder="Dietologo, Psicologo..." required autoFocus />
+            </div>
+            <div className="button-container">
+              <button type="submit">Cerca ora il tuo specialista</button>
+            </div>
+          </form>
         </div>
+
         <div className="right-content">
           <div className="image-container">
             <img src={process.env.PUBLIC_URL + '/images/main/' + images[currentIndex]} alt={`Image ${currentIndex + 1}`} id="main-image" />

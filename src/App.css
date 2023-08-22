@@ -97,15 +97,67 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 30px 5%;
+    /*background-color: #A6A6A6;*/
 }
   
 .left-content {
-    padding: 20px;
-    font-size: 24px; /* Adjust font size as needed */
-    span {
-        font-weight: bold;
-        color: #007bff; /* Adjust text color as needed */
-    }
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.left-content h1 {
+    font-size: 128px;
+    color: #004AAD;
+    margin-top: 0; /* Remove default margin */
+}
+
+.left-content h3 {
+    font-size: 42px;
+    color: #004AAD;
+}
+
+.search-form {
+    font-size: 42px;
+    margin-top: 20px;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 600px; /* Adjust the max width as needed */
+    margin: 10px auto; /* Center horizontally */
+    display: flex; /* Use flexbox to layout items */
+    justify-content: space-between; /* Space items horizontally */
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: left; /* Align input text to the left */
+}
+
+.input-container input {
+    flex: 1; /* Allow inputs to grow and take available space */
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.button-container {
+    width: 100%;
+    max-width: 550px;
+    margin: 20px auto; /* Center horizontally */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 5px 15px;
+    background-color: #004AAD;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-size: 36px;
+    cursor: pointer;
 }
   
 /* Right Content Styles */
@@ -136,4 +188,13 @@ main {
             }
         }
     }
+}
+
+#hr-vertical {
+    background-color:black;
+    color:black;
+    -webkit-transform:rotate(90deg);
+    width:100px;
+    height:1px;
+    border:2px;
 }
