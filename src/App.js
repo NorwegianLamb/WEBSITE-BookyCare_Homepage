@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <header className="homepage_header">
         <div className="left_nav">
-          <img src={process.env.PUBLIC_URL + '/logo.png'} className="logo" alt="app_logo" />
+          <img src={process.env.PUBLIC_URL + '/images/navbar/logo.png'} className="logo" alt="app_logo" />
           <nav className="navbar">
             <ul className="nav_links">
               <li><a href="/">Home</a></li>
@@ -37,13 +37,13 @@ function App() {
         </div>
         <div className='right_nav'>
           <a href="/notifiche" class="image-button">
-            <img src={process.env.PUBLIC_URL + '/notification-bell.png'} alt="notifiche" />
+            <img src={process.env.PUBLIC_URL + '/images/navbar/notification-bell.png'} alt="notifiche" />
           </a>
           <a href="/impostazioni" class="image-button">
-            <img src={process.env.PUBLIC_URL + '/settings.png'} alt="impostazioni" />
+            <img src={process.env.PUBLIC_URL + '/images/navbar/settings.png'} alt="impostazioni" />
           </a>
           <a href="/area-personale" class="image-button">
-            <img src={process.env.PUBLIC_URL + '/profile.png'} alt="area-personale" />
+            <img src={process.env.PUBLIC_URL + '/images/navbar/profile.png'} alt="area-personale" />
           </a>
         </div>
       </header>
