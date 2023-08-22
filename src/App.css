@@ -53,6 +53,16 @@ header {
     color: #004AAD;
 }
 
+.right_nav{
+    display: flex;
+    align-items: center;
+}
+
+.right_nav img {
+    cursor: pointer;
+    width: 50%;
+}
+
 header button{
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
@@ -78,4 +88,52 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 30px 5%;
+}
+
+/* ------------------------------------------------------- MAIN ----------------------------------------------------- */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+  
+.left-content {
+    padding: 20px;
+    font-size: 24px; /* Adjust font size as needed */
+    span {
+        font-weight: bold;
+        color: #007bff; /* Adjust text color as needed */
+    }
+}
+  
+/* Right Content Styles */
+.right-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .image-container {
+            width: 100%;
+            text-align: center;
+            img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .image-selector {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .square {
+            width: 30px;
+            height: 30px;
+            background-color: #ccc; /* Inactive square color */
+            margin: 0 10px;
+            cursor: pointer;
+            &.active {
+                background-color: #007bff; /* Active square color */
+            }
+        }
+    }
 }
