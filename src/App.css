@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-* {
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -107,9 +107,10 @@ main {
 }
 
 .left-content h1 {
-    font-size: 128px;
+    font-size: 110px; /*ex.128*/
     color: #004AAD;
     margin-top: 0; /* Remove default margin */
+    margin-bottom: -15px;
 }
 
 .left-content h3 {
@@ -150,45 +151,119 @@ main {
 }
 
 button[type="submit"] {
-    width: 100%;
+    width: 90%;
     padding: 5px 15px;
     background-color: #004AAD;
     color: #fff;
     border: none;
     border-radius: 15px;
-    font-size: 36px;
+    font-size: 30px;
     cursor: pointer;
 }
   
 /* Right Content Styles */
 .right-content {
+    margin-right: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .image-container {
-        width: 100%;
-        text-align: center;
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+}
+
+.box-shape {
+    position: relative;
+    width: 700px; /* Adjust width as needed */
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden;
+    border-radius: 35px;
+}
+
+/*.blurred-image {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    transform: translate(-60%, -50%);
+    filter: blur(0px);
+    z-index: 1;
+}*/
+
+.blurred-image {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 65%;
+    height: 80%;
+    filter: blur(0px);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.blurred-image img {
+    border-radius: 50px;
+}
+
+.png-image {
+    position: absolute;
+    top: 50%; /* Center the image vertically */
+    left: 65%; /* Center the image horizontally */
+    transform: translate(-50%, -50%); /* Center the image both horizontally and vertically */
+    max-width: 100%; /* Adjust the maximum width as needed */
+    max-height: 100%; /* Adjust the maximum height as needed */
+    animation: moveRight 5s infinite;
+    z-index: 2; /* Ensure the PNG image is above the blurred image */
+}
+
+@keyframes moveRight {
+    0% {
+        left: 65%; /* Initial position */
     }
-    .image-selector {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        .square {
-            width: 30px;
-            height: 30px;
-            background-color: #ccc; /* Inactive square color */
-            margin: 0 10px;
-            cursor: pointer;
-            &.active {
-                background-color: #007bff; /* Active square color */
-            }
-        }
+    75% {
+        left: 75%; /* Initial position */
+    }
+    100% {
+        left: 75%; /* Final position */
     }
 }
+
+.doctor-info {
+    position: absolute;
+    top: 15%; /* Adjust the top position as needed */
+    left: 10%; /* Adjust the right position as needed */
+    width: 45%;
+    background-color: rgba(250, 250, 250, 1); /* Background color for the info box */
+    color: #000; /* Text color */
+    padding: 15px;
+  }
+  
+  .doctor-info h2 {
+    color:#004AAD;
+    font-size: 24px;
+    margin: 0;
+    margin-left: 10px;
+  }
+  
+  .doctor-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    margin-left: 10px;
+  }
+  
+  /*
+  .doctor-info button {
+    padding: 8px 15px;
+    background-color: #004AAD;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }*/
+  
+  /* Adjust the z-index to ensure the info box is above the blurred image */
+  .doctor-info {
+    z-index: 2;
+  }
 
 #hr-vertical {
     background-color:black;
