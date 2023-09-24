@@ -231,9 +231,10 @@ button[type="submit"] {
     top: 15%; /* Adjust the top position as needed */
     left: 10%; /* Adjust the right position as needed */
     width: 45%;
-    background-color: rgba(250, 250, 250, 1); /* Background color for the info box */
+    background-color: #fafafa; /* Background color for the info box */
     color: #000; /* Text color */
     padding: 15px;
+    border-radius: 10px;
   }
   
   .doctor-info h2 {
