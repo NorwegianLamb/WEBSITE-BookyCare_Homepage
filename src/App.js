@@ -83,6 +83,10 @@ function App() {
               </div>
             </header>
             
+            {/*<div class="intText">
+              <h1>aiutiamo le persone a prendersi cura di se</h1>
+            </div>*/}
+
             <main>
               {/*------------------------------------------------------------ LEFT MAIN CONTENT ------------------------------------------- */}
               <div className="left-content">

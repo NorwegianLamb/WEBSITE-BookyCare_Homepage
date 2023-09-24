@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+/*
+    ADD BG TESTING
+*/
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -30,7 +34,7 @@ header {
 .logo{
     cursor: pointer;
     width: 25%;
-    padding-right: 15px;
+    margin-right: -20px;
 }
 
 .nav_links {
@@ -76,18 +80,20 @@ header button:hover{
     background-color: rgba(0, 136, 169, 0.2);
 }
 
-main {
+/* ------------------------------------------------------- INTERLINK ----------------------------------------------------- */
+
+.intText{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 5%;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 5%;
+.intText h1{
+    margin: 0 auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px; /*ex.128*/
+    color: #004AAD;
 }
 
 /* ------------------------------------------------------- MAIN ----------------------------------------------------- */
@@ -273,4 +279,13 @@ button[type="submit"] {
     width:100px;
     height:1px;
     border:2px;
+}
+
+/* ------------------------------------------------------- FOOTER ----------------------------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
 }
