@@ -33,8 +33,15 @@ header {
 
 .logo{
     cursor: pointer;
-    width: 25%;
-    margin-right: -20px;
+    width: 30%;
+    margin-right: -60px;
+}
+
+.nav_icons {
+    width: 80.0px;
+    height: 52.0px;
+    margin: 0 -10px;
+    padding: 0;
 }
 
 .nav_links {

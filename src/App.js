@@ -57,16 +57,15 @@ function App() {
           <>
             <header className="homepage_header">
               <div className="left_nav">
-                <img src={process.env.PUBLIC_URL + '/images/navbar/logo.png'} className="logo" alt="app_logo" />
+                <img src={process.env.PUBLIC_URL + '/images/navbar/booky-logo.png'} className="logo" alt="app_logo" />
                 <nav className="navbar">
                   <ul className="nav_links">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/appuntamenti">Appuntamenti</a></li>
-                    <li><a href="/punti-salute">Punti Salute</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/dottori">Dottori</a></li>
-                    <li><a href="/teams">Teams</a></li>
-                    <li><a href="/centri-sanitari">Centri Sanitari</a></li>
+                    <li><a href="/"><img src={process.env.PUBLIC_URL + '/images/navbar/icons/docs.png'} className="nav_icons" alt="app_logo" /></a></li>
+                    <li><a href="/ai"><img src={process.env.PUBLIC_URL + '/images/navbar/icons/ai.png'} className="nav_icons" alt="app_logo" /></a></li>
+                    <li><a href="/teams"><img src={process.env.PUBLIC_URL + '/images/navbar/icons/teams.png'} className="nav_icons" alt="app_logo" /></a></li>
+                    <li><a href="/jobs"><img src={process.env.PUBLIC_URL + '/images/navbar/icons/jobs.png'} className="nav_icons" alt="app_logo" /></a></li>
+                    <li><a href="/blog"><img src={process.env.PUBLIC_URL + '/images/navbar/icons/blog.png'} className="nav_icons" alt="app_logo" /></a></li>
+                    <li><a href="/points"><img src={process.env.PUBLIC_URL + '/images/navbar/icons/points.png'} className="nav_icons" alt="app_logo" /></a></li>
                   </ul>
                 </nav>
               </div>
