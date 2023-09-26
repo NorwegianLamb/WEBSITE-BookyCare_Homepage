@@ -2,18 +2,8 @@
 
 This startup's website is created using REACT (for the moment only Front-End, adding Node Back-End later on)
 
-## Main features:
+## Info:
 
-In this website you'll find:
-
-### `Booking an Appointment`
-
-[...]
-
-### `Checking Appointments`
-
-[...]
-
-### `HealthPoints`
+Use ```npm start``` to initialize the project (NEED TO ADD RE-SIZE FEATURES)
 
 [...]
