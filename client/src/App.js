@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'; // Import React Router components
 import './App.css';
 import Loading from './components/loading/Loading';
 
