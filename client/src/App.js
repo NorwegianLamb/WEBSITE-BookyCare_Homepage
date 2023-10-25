@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'; // Import React Router components
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import './App.css';
 import Loading from './components/loading/Loading';
 import Homepage from './components/homepage/Homepage';
@@ -15,12 +15,14 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      {
-        loading ? (<Loading />) 
-        : (<Homepage />)
-      }
-    </div>
+    <Router>
+      <div className="App">
+          {
+            loading ? (<Loading />) 
+            : (<Homepage />)
+          }
+      </div>
+    </Router>
   );
 }
 
