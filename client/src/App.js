@@ -4,28 +4,47 @@ import Loading from './components/loading/Loading';
 
 function App() {
 
-  const doctors = [
-    {
-      name: 'Dr. Flavio Gjoni',
-      specialization: '//',
-      experience: '3 years',
-    },
-    {
-      name: 'Dr. Alecccs Modenese',
-      specialization: '//',
-      experience: '15 years',
-    },
-    {
-      name: 'Drs. Francesco Pittarello',
-      specialization: '//',
-      experience: '40 years',
-    },
-    {
-      name: 'Dr. Marco Maddiotto',
-      specialization: '//',
-      experience: '12 years',
-    },
-  ];
+  const [backendData, setBackendData] = useState([{}])
+
+  useEffect(() => {
+    fetch("/api").then(
+      response => response.json()
+    ).then(
+      data => {
+        setBackendData(data);
+      }
+    )
+  }, [])
+
+  var doctors = []
+  if(typeof backendData.doctors === 'undefined'){
+    doctors = [
+      {
+        name: 'Dr. Flavio Gjoni',
+        specialization: '//',
+        experience: '3 years',
+      },
+      {
+        name: 'Dr. Flavio Gjoni',
+        specialization: 'Dr. Flavio Gjoni',
+        experience: '15 years',
+      },
+      {
+        name: 'Dr. Flavio Gjoni',
+        specialization: '//',
+        experience: '40 years',
+      },
+      {
+        name: 'Dr. Flavio Gjoni',
+        specialization: '//',
+        experience: '12 years',
+      },
+    ];
+  }else {
+    backendData.doctors.map((doctor, i) => {
+      doctors[i] = doctor;
+    });
+  }
 
   const [loading, setLoading] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -70,13 +89,13 @@ function App() {
                 </nav>
               </div>
               <div className='right_nav'>
-                <a href="/notifiche" class="image-button">
+                <a href="/notifiche" className="image-button">
                   <img src={process.env.PUBLIC_URL + '/images/navbar/notification-bell.png'} alt="notifiche" />
                 </a>
-                <a href="/impostazioni" class="image-button">
+                <a href="/impostazioni" className="image-button">
                   <img src={process.env.PUBLIC_URL + '/images/navbar/settings.png'} alt="impostazioni" />
                 </a>
-                <a href="/area-personale" class="image-button">
+                <a href="/area-personale" className="image-button">
                   <img src={process.env.PUBLIC_URL + '/images/navbar/profile.png'} alt="area-personale" />
                 </a>
               </div>
