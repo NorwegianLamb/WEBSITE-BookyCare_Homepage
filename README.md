@@ -4,6 +4,6 @@ This startup's website is created using REACT (for the moment only Front-End, ad
 
 ## Info:
 
-Use ```npm start``` to initialize the project (NEED TO ADD RE-SIZE FEATURES).
+Use ```npm start``` to initialize the project (NEED TO ADD RE-SIZE FEATURES)
 
 [...]
