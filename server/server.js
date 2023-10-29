@@ -2,21 +2,21 @@ const express = require('express');
 const app = express();
 
 app.get("/api", (req,res) => {
-    res.json({"doctors": [{name: 'Dr. Flavio Gjoni(1)',
+    res.json({"doctors": [{name: '(1)',
                             specialization: '//',
-                            experience: '3 years'},
+                            experience: '3'},
 
-                            {name: 'Dr. Flavio Gjoni(2)',
+                            {name: '(2)',
                             specialization: '//',
-                            experience: '15 years'},
+                            experience: '15'},
                             
-                            {name: 'Dr. Flavio Gjoni(3)',
+                            {name: '(3)',
                             specialization: '//',
-                            experience: '40 years'},
+                            experience: '40'},
 
-                            {name: 'Dr. Flavio Gjoni(4)',
+                            {name: '(4)',
                             specialization: '//',
-                            experience: '12 years'}]})
+                            experience: '12'}]})
 })
 
 app.listen(5000, () => {console.log("Server started on port 5000")})
