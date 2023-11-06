@@ -19,7 +19,13 @@ function App() {
       <div className="App">
           {
             loading ? (<Loading />) 
-            : (<Homepage />)
+            : (
+              <Switch>
+                <Route path="/">
+                  <Homepage />
+                </Route>
+              </Switch>
+              )
           }
       </div>
     </Router>
