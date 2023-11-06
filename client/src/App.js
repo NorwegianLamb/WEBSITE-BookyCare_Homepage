@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import './App.css';
 import Loading from './components/loading/Loading';
 import Homepage from './components/homepage/Homepage';
+import Register from './components/register/Register';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -21,8 +22,11 @@ function App() {
             loading ? (<Loading />) 
             : (
               <Switch>
-                <Route path="/">
+                <Route path="/" exact>
                   <Homepage />
+                </Route>
+                <Route path="/area-personale">
+                  <Register />
                 </Route>
               </Switch>
               )

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Homepage.css';
 
 function Homepage() {
@@ -76,15 +77,17 @@ function Homepage() {
             </nav>
             </div>
             <div className='right_nav'>
-            <a href="/notifiche" className="image-button">
-                <img src={process.env.PUBLIC_URL + '/images/navbar/notification-bell.png'} alt="notifiche" />
-            </a>
-            <a href="/impostazioni" className="image-button">
-                <img src={process.env.PUBLIC_URL + '/images/navbar/settings.png'} alt="impostazioni" />
-            </a>
-            <a href="/area-personale" className="image-button">
-                <img src={process.env.PUBLIC_URL + '/images/navbar/profile.png'} alt="area-personale" />
-            </a>
+              <a href="/notifiche" className="image-button">
+                  <img src={process.env.PUBLIC_URL + '/images/navbar/notification-bell.png'} alt="notifiche" />
+              </a>
+              <a href="/impostazioni" className="image-button">
+                  <img src={process.env.PUBLIC_URL + '/images/navbar/settings.png'} alt="impostazioni" />
+              </a>
+              <div className="image-button">
+                <Link to="/area-personale">
+                    <img src={process.env.PUBLIC_URL + '/images/navbar/profile.png'} alt="area-personale" />
+                </Link>
+              </div>
             </div>
         </header>
 
