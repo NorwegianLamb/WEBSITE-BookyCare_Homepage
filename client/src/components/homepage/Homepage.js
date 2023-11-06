@@ -83,11 +83,9 @@ function Homepage() {
               <a href="/impostazioni" className="image-button">
                   <img src={process.env.PUBLIC_URL + '/images/navbar/settings.png'} alt="impostazioni" />
               </a>
-              <div className="image-button">
-                <Link to="/area-personale">
-                    <img src={process.env.PUBLIC_URL + '/images/navbar/profile.png'} alt="area-personale" />
-                </Link>
-              </div>
+              <a href="/area-personale" className="image-button">
+                  <img src={process.env.PUBLIC_URL + '/images/navbar/profile.png'} alt="area-personale" />
+              </a>
             </div>
         </header>
 
