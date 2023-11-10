@@ -1,11 +1,12 @@
 import './FormInput.css';
 
-function FormInput() {
+function FormInput(props) {
 
     return (
         <div className='formInput'>
-            <label>Username</label>
-            <input placeholder='Username' className='inputs'/>
+            {/*<label>Username</label>*/}
+            <input placeholder={props.placeholder} className='formInput'
+            onChange={e=>props.setUsername(e.target.value)}/>
         </div>
     );
 }

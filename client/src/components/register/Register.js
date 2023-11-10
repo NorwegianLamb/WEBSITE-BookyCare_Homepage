@@ -3,14 +3,15 @@ import './Register.css';
 import FormInput from './FormInput';
 
 function Register() {
-
+    const [username, setUsername] = useState("");
+    console.log(username);
     return (
         <div className='pageHolder'>
             <form>
-                <FormInput/>
-                <FormInput/>
-                <FormInput/>
-                <FormInput/>
+                <FormInput placeholder='Username' setUsername={setUsername}/>
+                <FormInput placeholder='Password'/>
+                <FormInput placeholder='Email'/>
+                <FormInput placeholder='Birthday'/>
             </form>
         </div>
     );
