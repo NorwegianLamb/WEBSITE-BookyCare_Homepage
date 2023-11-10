@@ -3,4 +3,11 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    ),
+    url("https://img.freepik.com/premium-vector/hand-drawn-pharmacy-doodle-set_160308-211.jpg?w=1380");
+    background-size: cover;
+    background-position: center;
 }
