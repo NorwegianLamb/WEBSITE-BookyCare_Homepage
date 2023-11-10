@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
+import './Register.css';
+import FormInput from './FormInput';
 
 function Register() {
 
     return (
-        <>
-            <div>
-                <form>
-                    <div className='formInput'>
-                        <label>Username</label>
-                        <input/>
-                    </div>
-                </form>
-            </div>
-        </>
+        <div className='pageHolder'>
+            <form>
+                <FormInput/>
+                <FormInput/>
+                <FormInput/>
+                <FormInput/>
+            </form>
+        </div>
     );
 }
 
