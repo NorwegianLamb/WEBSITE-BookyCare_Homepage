@@ -54,6 +54,7 @@ function Register() {
     return (
         <div className='pageHolder'>
             <form onSubmit={handleSubmit}>
+                <h1>Register</h1>
                 {inputs.map(input=>(
                     <FormInput key={input.id} 
                     {...input} 

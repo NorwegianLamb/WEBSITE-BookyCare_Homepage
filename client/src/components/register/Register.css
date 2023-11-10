@@ -4,10 +4,16 @@ body {
     justify-content: center;
     height: 100vh;
     background: linear-gradient(
-        rgba(255, 255, 255, 0.7),
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
     ),
     url("https://img.freepik.com/premium-vector/hand-drawn-pharmacy-doodle-set_160308-211.jpg?w=1380");
     background-size: cover;
     background-position: center;
+}
+
+form{
+    background-color: white;
+    padding: 0px 60px;
+    border-radius: 10px;
 }
