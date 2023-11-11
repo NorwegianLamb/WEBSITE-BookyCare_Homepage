@@ -53,7 +53,7 @@ function Register() {
 
     return (
         <div className='pageHolder'>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='registerForm'>
                 <h1>Register</h1>
                 {inputs.map(input=>(
                     <FormInput key={input.id} 
