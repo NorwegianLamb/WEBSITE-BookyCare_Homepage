@@ -112,7 +112,7 @@ function Homepage() {
                 <div className="doctor-info">
                     <h2>{doctors[currentIndex].name}</h2>
                     <p>Specialization: {doctors[currentIndex].specialization}</p>
-                    <p>Experience:{doctors[currentIndex].experience}</p>
+                    <p>Experience: {doctors[currentIndex].experience}</p>
                     {/*<button>Book Appointment</button>*/}
                 </div>
                 <div className="blurred-image" style={{ backgroundColor: boxColors[currentIndex] }}>
