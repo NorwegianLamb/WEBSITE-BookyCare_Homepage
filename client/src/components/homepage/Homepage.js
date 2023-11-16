@@ -19,26 +19,21 @@ function Homepage() {
   var doctors = []
   if(typeof backendData.doctors === 'undefined'){
     doctors = [
-      {
-        name: 'Dr. Flavio Gjoni',
-        specialization: '//',
-        experience: '3 years',
-      },
-      {
-        name: 'Dr. Flavio Gjoni',
-        specialization: 'Dr. Flavio Gjoni',
-        experience: '15 years',
-      },
-      {
-        name: 'Dr. Flavio Gjoni',
-        specialization: '//',
-        experience: '40 years',
-      },
-      {
-        name: 'Dr. Flavio Gjoni',
-        specialization: '//',
-        experience: '12 years',
-      },
+      {name: '(1)',
+                            specialization: '//',
+                            experience: '3'},
+
+                            {name: '(2)',
+                            specialization: '//',
+                            experience: '15'},
+                            
+                            {name: '(3)',
+                            specialization: '//',
+                            experience: '40'},
+
+                            {name: '(4)',
+                            specialization: '//',
+                            experience: '12'}
     ];
   }else {
     backendData.doctors.map((doctor, i) => {
