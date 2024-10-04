@@ -12,6 +12,6 @@ I was responsible for leading the **IT team**, managing the **software architect
 ## Info:
 This startup's website is created using **REACT** for the front-end and **NODE** for the back-end.
 
-Use ```npm start``` to initialize the project (NEED TO ADD RE-SIZE FEATURES).
+Use ```npm start``` to initialize the project (NEED TO ADD RE-SIZE FEATURES)
 
 [...]
